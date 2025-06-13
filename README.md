@@ -25,9 +25,4 @@ Este sitio web permite a los usuarios navegar por productos, ver categorías, y 
 
 ## 📦 Instalación local (opcional)
 
-Si quieres ejecutar el sitio localmente:
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/Piero2506/TIENDA-AUTOMATIZADA.git
 
