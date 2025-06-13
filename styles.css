@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002244;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  color: #fff;
+}
+header h1 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background: linear-gradient(to right, #002244, #005288);
+  color: #fff;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background-color: #ffcc00;
+  color: #002244;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e6b800;
+}
+.section {
+  padding: 2rem 1rem;
+}
+.section h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #002244;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+.card {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 70px;
+  margin-bottom: 0.75rem;
+}
+.card p {
+  margin: 0.25rem 0;
+}
+.add-to-cart {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+#cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f7f7f7;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+#cart h4 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #002244;
+}
+#cart-items {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+#cart-total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+footer {
+  background-color: #002244;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .section h3 {
+    font-size: 1.5rem;
+  }
+}

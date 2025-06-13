@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Automatizada</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1281/1281661.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tienda Automatizada</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#" onclick="toggleCart()">Carrito 🛒</a>
+      <a href="#">Mi cuenta</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>¡Todo lo que necesitas al alcance de un clic!</h2>
+    <p>Compra rápida, segura y automatizada — como un Tambo, pero mejor</p>
+    <button class="btn">Explorar productos</button>
+  </section>
+
+  <section class="section">
+    <h3>Categorías principales</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="bebidas">
+        <p>Bebidas</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="snacks">
+        <p>Snacks</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1515/1515684.png" alt="limpieza">
+        <p>Limpieza</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1048/1048945.png" alt="personal">
+        <p>Cuidado personal</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Productos destacados</h3>
+    <div class="grid" id="product-list"></div>
+  </section>
+
+  <div id="cart">
+    <h4>🛒 Carrito de Compras</h4>
+    <div id="cart-items"></div>
+    <div id="cart-total">Total: $0.00</div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tienda Automatizada. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
